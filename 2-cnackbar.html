@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Canackbar</title>
-    <script type="module" crossorigin src="/vanilla-app-template/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
-    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/styles-MJSjXEIk.css">
+    <script type="module" crossorigin src="/vanilla-app-template/2-cnackbar.js"></script>
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-BbbuE1sJ.js">
+    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/vendor-CZjNVMTf.css">
+    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/styles-CTdOx9T6.css">
   </head>
   <body>
     <main>
@@ -16,6 +19,38 @@
         </h1>
         <a class="back-link" href="./index.html">Go back</a>
       </div>
+      <form class="form-container">
+        <label class="form-label">
+          Delay (ms)
+          <input class="form-input" type="number" name="delay" required />
+        </label>
+
+        <fieldset class="form-fieldset">
+          <legend class="form-legend">State</legend>
+          <label class="radio-label">
+            <input
+              class="radio-input"
+              type="radio"
+              name="state"
+              value="fulfilled"
+              required
+            />
+            Fulfilled
+          </label>
+          <label class="radio-label">
+            <input
+              class="radio-input"
+              type="radio"
+              name="state"
+              value="rejected"
+              required
+            />
+            Rejected
+          </label>
+        </fieldset>
+
+        <button type="submit" class="form-button">Create notification</button>
+      </form>
     </main>
   </body>
 </html>
