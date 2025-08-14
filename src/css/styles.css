@@ -17,5 +17,5 @@
 @import url('./back-link.css');
 @import url('./footer.css');
 
-@import url(./1-time.css);
-@import url(./2-canckbar.css);
+@import url('./1-timer.css');
+@import url('./2-snackbar.css');
